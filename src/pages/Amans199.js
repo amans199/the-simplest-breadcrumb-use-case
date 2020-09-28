@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
 import BreadcrumbMaster from 'the-simplest-breadcrumb'
 
-function App() {
+function User() {
   return (
-    <div className="App">
+    <div className="User">
       <header className="App-header">
+        <p>This is the user page</p>
         <p>{window.location.href}</p>
         <ul id="breadcrumb199__test1"></ul>
         <ul id="breadcrumb199__test2"></ul>
@@ -46,4 +46,4 @@ BreadcrumbMaster({
     home: 'Home' // home : to change the text in the first item
   },
 })
-export default App;
+export default User;
