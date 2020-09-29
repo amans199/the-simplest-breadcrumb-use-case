@@ -2,56 +2,60 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import User from './pages/Amans199';
 import * as serviceWorker from './serviceWorker';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Prompt
 } from "react-router-dom";
+import Home from './pages/Home';
+import UserList from './pages/UserList';
+import User from './pages/User';
+import Amans199 from './pages/Amans199';
 
 
 ReactDOM.render(
   <Router>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/users-list">Users List</Link>
-        </li>
-        <li>
-          <Link to="/users-list/user">User</Link>
-        </li>
-        <li>
-          <Link to="/users-list/user/amans199">amans199</Link>
-        </li>
-      </ul>
-    </nav>
     <React.StrictMode>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/users-list">Users List</Link>
+          </li>
+          <li>
+            <Link to="/users-list/user">User</Link>
+          </li>
+          <li>
+            <Link to="/users-list/user/amans199">amans199</Link>
+          </li>
+        </ul>
+      </nav>
+      <App />
       <Switch>
-        {/* <Route path="/">
-          <App />
-        </Route> */}
-        {/* <Route path="/users-list">
-          <p>
-            lorem ibsum
-          </p>
-        </Route> */}
-        <Route path="/users-list/user">
-          <App />
+        <Route exact path="/">
+          <Home />
         </Route>
-        <Route path="/users-list/user/amans199">
+        <Route exact path="/users-list">
+          <UserList />
+        </Route>
+        <Route exact path="/users-list/user">
           <User />
+        </Route>
+        <Route exact path="/users-list/user/amans199">
+          <Amans199 />
         </Route>
       </Switch>
     </React.StrictMode>
-  </Router>
+  </Router >
   ,
   document.getElementById('root')
 );
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

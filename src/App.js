@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 import BreadcrumbMaster from 'the-simplest-breadcrumb'
 
+
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>{window.location.href}</p>
         <ul id="breadcrumb199__test1"></ul>
         <ul id="breadcrumb199__test2"></ul>
       </header>
