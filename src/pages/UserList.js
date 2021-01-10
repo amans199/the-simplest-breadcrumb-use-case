@@ -4,8 +4,7 @@ function UserList() {
   return (
     <div className="User">
       <header className="App-header">
-        <p>This is the user list page</p>
-        <p>{window.location.href}</p>
+        <h1>This is the user list page</h1>
       </header>
     </div>
   );

@@ -4,8 +4,7 @@ function Home() {
   return (
     <div className="User">
       <header className="App-header">
-        <p>This is the Home page</p>
-        <p>{window.location.href}</p>
+        <h1>This is the Home page</h1>
       </header>
     </div>
   );

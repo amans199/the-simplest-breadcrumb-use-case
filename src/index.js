@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './tailwind.output.css';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  Prompt
+  Link
 } from "react-router-dom";
 import Home from './pages/Home';
 import UserList from './pages/UserList';
@@ -35,7 +36,10 @@ ReactDOM.render(
           </li>
         </ul>
       </nav>
-      <App />
+      <Switch>
+           <App />
+      </Switch>
+
       <Switch>
         <Route exact path="/">
           <Home />

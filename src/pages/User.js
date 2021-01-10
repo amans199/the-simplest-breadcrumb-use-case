@@ -4,8 +4,7 @@ function User() {
   return (
     <div className="User">
       <header className="App-header">
-        <p>This is the user page</p>
-        <p>{window.location.href}</p>
+        <h1>This is the user page</h1>
       </header>
     </div>
   );

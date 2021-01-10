@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+
+h1{
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+
+#breadcrumb199__test2{
+  display: flex;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border: 2px dotted #eee;
+  padding: 70px;
+  margin: 40px;
+}
+
+#breadcrumb199__test2 li a ,.options-splitter {
+  font-size: 35px;
+}
