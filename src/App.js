@@ -36,6 +36,21 @@ class App extends Component {
         "users-list": 'all User List',
         "amans199": 'Amans\'s Account'
       },
+      // customElements: [ 
+      //   { index: 2, text: 'secondElement', url: '#' },
+      //   { index: 3, text: 'thirdElement', url: '#' },
+      //   { index: 4, text: 'fourthElement', url: '#' },
+      // ],
+      exceptions_list:[
+        {
+         page:"user",
+        customElements: [ 
+          { index: 2, text: 'loremFirst', url: '#loremFirst' },
+          { index: 3, text: 'loremSecond', url: '#loremSecond' },
+          { index: 4, text: 'loremThird', url: '/amans199' },
+        ],
+      },
+      ]
     })
     return (
       <div className="App">
